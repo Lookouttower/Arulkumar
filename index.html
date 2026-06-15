@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Lookout Towers Creative Studio</title>
+  <meta name="description" content="The Lookout Towers Creative Studio: premium structure-locked prompt systems, visual rules, and cinematic image-to-video guidance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Barlow+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══════════════════════════════════════════ -->
+  <header class="site-header" id="top">
+    <a class="brand header-brand-text" href="#home" aria-label="The Lookout Towers Creative Studio">
+      <strong><b>The Lookout Towers</b><em>Creative Studio</em></strong>
+    </a>
+    <nav class="nav" id="nav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#prompts">Prompt Library</a>
+      <a href="#video">Image-to-Video</a>
+      <a href="#rules">Do's &amp; Don'ts</a>
+      <a href="#brand">Brand Kit</a>
+    </nav>
+    <a class="header-cta" href="#prompts">Explore Prompts</a>
+    <button class="menu" id="menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO ══════════════════════════════════════════ -->
+    <section class="hero" id="home">
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/images/tower-night-wide.png">
+        <source src="assets/video/Bigskyas-1.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-frame" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Luxury at Heights</p>
+          <h1>The Lookout Towers Creative Studio</h1>
+          <p class="hero-copy">A premium creative system for producing structure-accurate tower imagery, cinematic motion, and investor-grade visual storytelling.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#prompts">Explore Prompt Library</a>
+            <a class="btn ghost" href="#video">View Video Workflow</a>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#features" aria-label="Scroll to explore"><span>Scroll</span><i></i></a>
+    </section>
+
+    <!-- ═══ FEATURES ══════════════════════════════════════ -->
+    <section class="section dark compact-top" id="features">
+      <div class="container">
+        <div class="feature-grid" id="featureGrid"></div>
+      </div>
+    </section>
+
+    <!-- ═══ STUDIO SHOWCASE ═══════════════════════════════ -->
+    <section class="section light studio-showcase" id="studio">
+      <div class="container split">
+        <div>
+          <p class="kicker">Creative Studio</p>
+          <h2>A premium resource hub for structure-locked tower visuals.</h2>
+        </div>
+        <p class="lead">Built for designers, AI creators, architects, marketers, and hospitality teams who need accurate Lookout Tower visuals without sacrificing structure, proportion, brand identity, or realism.</p>
+      </div>
+    </section>
+
+    <!-- ═══ WORKFLOW ═══════════════════════════════════════ -->
+    <section class="section dark" id="workflow">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Workflow Guide</p>
+            <h2>From original reference to approved creative asset.</h2>
+          </div>
+          <p class="section-copy">A disciplined production sequence keeps the tower accurate while improving location realism, lighting, atmosphere, and final presentation.</p>
+        </div>
+        <div class="note">
+          <strong>Important workflow note</strong>
+          The more accurately the location, terrain, vegetation, weather, light, and atmosphere are described, the more refined and realistic the final output will be.
+        </div>
+        <div class="workflow" id="workflowGrid"></div>
+        <div class="section-actions">
+          <button class="btn primary" data-copy-master>Copy Master Prompt Set</button>
+          <a class="btn ghost" href="#video">Start Video Workflow</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROMPT LIBRARY ════════════════════════════════ -->
+    <section class="section dark prompt-section" id="prompts">
+      <div class="container">
+        <div class="prompt-heading">
+          <h2>Curated prompts for exceptional visual storytelling.</h2>
+          <p class="prompt-heading-copy">Nine production-ready creative systems, arranged in a clear workflow and ready to copy, customize, and create.</p>
+        </div>
+        <div class="prompt-gallery" id="promptGrid"></div>
+      </div>
+    </section>
+
+    <!-- ═══ DO'S & DON'TS ════════════════════════════════ -->
+    <section class="section light" id="rules">
+      <div class="container">
+        <p class="kicker">Structure-Lock Rules</p>
+        <h2>Creative Rules: Do's &amp; Don'ts</h2>
+        <p class="section-copy">Preserve architectural identity, visual quality, and brand consistency across every Lookout Tower generation.</p>
+        <div class="rules-grid">
+          <div class="rule-card do"><h3>Do's</h3><ul id="dosList"></ul></div>
+          <div class="rule-card dont"><h3>Don'ts</h3><ul id="dontsList"></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ IMAGE-TO-VIDEO ════════════════════════════════ -->
+    <section class="section dark" id="video">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Image-to-Video Templates</p>
+            <h2>Turn approved tower images into stable cinematic motion.</h2>
+          </div>
+          <p class="section-copy">Keep the architecture locked, use controlled camera movement, and introduce only believable environmental motion.</p>
+        </div>
+        <div class="process-lane">
+          <span>Upload final image</span>
+          <span>Select movement</span>
+          <span>Copy video prompt</span>
+          <span>Generate video</span>
+          <span>Review stability</span>
+          <span>Export in HD</span>
+        </div>
+        <div class="movement-grid" id="movementGrid"></div>
+      </div>
+    </section>
+
+    <!-- ═══ BRAND KIT ══════════════════════════════════════ -->
+    <section class="section light" id="brand">
+      <div class="container">
+        <p class="kicker">Brand Kit</p>
+        <h2>Logo usage, typography, colors, and layout discipline.</h2>
+        <div class="brand-panel">
+          <div class="logo-demo brand-tower-card">
+            <img src="assets/images/creative-studio-tower.jpeg" alt="The Lookout Towers illuminated tower at night">
+            <div class="brand-tower-caption">
+              <h3>The Lookout Towers</h3>
+              <p>Creative Studio</p>
+            </div>
+          </div>
+          <div>
+            <h3>Brand Palette</h3>
+            <div class="palette" id="paletteGrid"></div>
+          </div>
+          <div>
+            <h3>Logo Usage Rules</h3>
+            <ul class="simple-list">
+              <li>Use the main logo whenever possible.</li>
+              <li>Use the secondary logo in reduced spaces.</li>
+              <li>Use black-and-white logo versions on busy backgrounds.</li>
+              <li>Use the tower icon as a special brand identifier.</li>
+              <li>Do not rotate, stretch, distort, outline, or modify the logo.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Typography</h3>
+            <p><strong>Header Font</strong><br>Antic Didone</p>
+            <p><strong>Body / Secondary Font</strong><br>Barlow Condensed</p>
+          </div>
+          <div>
+            <h3>Layout &amp; Image Rules</h3>
+            <ul class="simple-list">
+              <li>Use transparency and thin lines to separate text from image backgrounds.</li>
+              <li>Maintain legibility and never lose image focus.</li>
+              <li>Do not mix heavy and light icon groups in the same composition.</li>
+              <li>Use restrained radii and premium editorial spacing.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FAQ ════════════════════════════════════════════ -->
+    <section class="section light" id="faq">
+      <div class="container narrow">
+        <p class="kicker">FAQ</p>
+        <h2>Answers for designers, creators, and project teams.</h2>
+        <div class="faq" id="faqList"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand footer-brand-text" href="#home">
+          <strong><b>The Lookout Towers</b><em>Creative Studio</em></strong>
+        </a>
+        <p>Structure-locked prompt systems, visual rules, and cinematic image-to-video guidance.</p>
+      </div>
+      <div>
+        <a href="#prompts">Prompt Library</a>
+        <a href="#video">Image-to-Video</a>
+        <a href="#rules">Do's &amp; Don'ts</a>
+        <a href="#brand">Brand Kit</a>
+      </div>
+      <div>
+        <p>© The Lookout Towers Creative Studio. All rights reserved.</p>
+        <p>Contact: <a class="contact-link" href="mailto:arul@thelookouttowers.com">arul@thelookouttowers.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ MODAL ══════════════════════════════════════════ -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-panel">
+      <button class="modal-close" id="modalClose" aria-label="Close prompt">×</button>
+      <div class="modal-image">
+        <img id="modalImg" alt="Prompt preview">
+      </div>
+      <div class="modal-content">
+        <div class="modal-topline">
+          <span class="pill" id="modalCat"></span>
+          <span class="modal-index" id="modalIndex"></span>
+        </div>
+        <h3 id="modalTitle"></h3>
+        <div class="modal-tags" id="modalTags"></div>
+        <p class="modal-use" id="modalUse"></p>
+        <div class="modal-meta">
+          <div><span>Required input</span><p id="modalInput"></p></div>
+          <div><span>Editable variables</span><p id="modalVariables"></p></div>
+          <div><span>Recommended ratio</span><p id="modalRatio"></p></div>
+        </div>
+        <section class="prompt-block">
+          <div class="prompt-block-title">
+            <h4>Main Prompt</h4>
+            <button class="text-copy" id="modalCopyInline">Copy</button>
+          </div>
+          <pre id="modalPrompt"></pre>
+        </section>
+        <section class="prompt-block negative-block">
+          <div class="prompt-block-title">
+            <h4>Negative Prompt</h4>
+            <button class="text-copy" id="modalCopyNegativeInline">Copy</button>
+          </div>
+          <pre id="modalNegative"></pre>
+        </section>
+        <div class="modal-actions">
+          <button class="btn primary" id="modalCopy">Copy Prompt</button>
+          <button class="btn ghost" id="modalCopyNegative">Copy Negative Prompt</button>
+          <a class="btn ghost" href="#video" id="modalVideoLink">Image to Video</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Copied to clipboard</div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
